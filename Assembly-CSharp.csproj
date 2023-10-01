@@ -134,6 +134,7 @@
      <Compile Include="Assets\CodeBase\Infrastructure\Services\PersistentProgress\PersistentProgressService.cs" />
      <Compile Include="Assets\CodeBase\Infrastructure\Services\Ticking\TickService.cs" />
      <Compile Include="Assets\CodeBase\Infrastructure\AssetManagement\AssetPath.cs" />
+     <Compile Include="Assets\CodeBase\Infrastructure\Services\Ui\WinWindow.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\CodeBase\Infrastructure\GameBootstrapper.cs" />
      <Compile Include="Assets\CodeBase\Core\Models\Systems\IPhysicBody.cs" />
@@ -166,6 +167,7 @@
      <Compile Include="Assets\CodeBase\Infrastructure\States\GameLoopState.cs" />
      <Compile Include="Assets\CodeBase\Infrastructure\Helpers\Observable.cs" />
      <Compile Include="Assets\CodeBase\Core\Models\Components\SpiderComponents.cs" />
+     <Compile Include="Assets\Timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\CodeBase\Infrastructure" />

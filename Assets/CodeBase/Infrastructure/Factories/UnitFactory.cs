@@ -4,6 +4,7 @@ using CodeBase.Infrastructure.Helpers;
 using CodeBase.Infrastructure.Services.Binding;
 using CodeBase.Infrastructure.Services.Input;
 using CodeBase.Infrastructure.Services.System;
+using CodeBase.Infrastructure.Services.Ui;
 using UnityEngine;
 using IUnit = CodeBase.Core.Models.IUnit;
 using Object = UnityEngine.Object;
@@ -17,15 +18,15 @@ namespace CodeBase.Infrastructure.Factories
         private readonly ServiceSystemFactory _serviceSystemFactory;
         private readonly SystemService _systemService;
         private BinderFactory _binderFactory;
-        private IInputService _inputService;
+        private WindowService _windowService;
 
         public UnitFactory(ViewFactory viewFactory,
             ServiceSystemFactory serviceSystemFactory,
             SystemService systemService,
             BinderFactory binderFactory,
-            IInputService inputService)
+            WindowService windowService)
         {
-            _inputService = inputService;
+            _windowService = windowService;
             _binderFactory = binderFactory;
             _systemService = systemService;
             _serviceSystemFactory = serviceSystemFactory;
@@ -74,6 +75,8 @@ namespace CodeBase.Infrastructure.Factories
             linker.Add(roomDestroyer);
             linker.Add(bombPlacer);
             linker.Add(lampPlacer);
+            
+            binder.LinkEvent(model.Killed, _windowService.CreateWinMenu);
         }
         
         private void LinkEnemySystems(IUnit model, SystemLinker linker)

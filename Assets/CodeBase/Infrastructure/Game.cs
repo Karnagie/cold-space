@@ -20,6 +20,7 @@ namespace CodeBase.Infrastructure
             var gameStateMachine = new GameStateMachine(sceneLoader, loadingCurtain, loadLevelStateFactor, initializable, 
                 binderService, windowService);
             _stateMachine = gameStateMachine;
+            windowService.GameStateMachine = _stateMachine;
         }
     }
 }

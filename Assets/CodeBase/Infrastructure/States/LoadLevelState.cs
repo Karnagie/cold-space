@@ -48,7 +48,7 @@ namespace CodeBase.Infrastructure.States
 
         private void OnLoaded()
         {
-            var window = _windowService.CreateLevelMenu();
+            var window = _windowService.CreateLevelMenu("Menu");
             window.Start.onClick.AddListener((() => _gameStateMachine.Enter<MenuState, string>("Menu")));
             
             _gameFactory.CreateInventory();
