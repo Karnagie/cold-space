@@ -152,26 +152,26 @@ namespace CodeBase.Infrastructure.Kinematics
             }
         }
 
-        private void OnDrawGizmos()
-        {
-            var current = transform;
-
-            for (int i = 0; i < _length && current.parent != null; i++)
-            {
-                var parentPosition = current.parent.position;
-                var currentPosition = current.position;
-                var scale = Vector3.Distance(currentPosition, parentPosition) * 0.1f;
-                
-                Handles.matrix = Matrix4x4.TRS(
-                    currentPosition,
-                    Quaternion.FromToRotation(Vector3.up, parentPosition - currentPosition),
-                    new Vector3(scale, Vector3.Distance(parentPosition, currentPosition), scale)
-                    );
-                Handles.color = Color.green;
-                Handles.DrawWireCube(Vector3.up * 0.5f, Vector3.one);
-                
-                current = current.parent;
-            }
-        }
+        // private void OnDrawGizmos()
+        // {
+        //     var current = transform;
+        //
+        //     for (int i = 0; i < _length && current.parent != null; i++)
+        //     {
+        //         var parentPosition = current.parent.position;
+        //         var currentPosition = current.position;
+        //         var scale = Vector3.Distance(currentPosition, parentPosition) * 0.1f;
+        //         
+        //         Handles.matrix = Matrix4x4.TRS(
+        //             currentPosition,
+        //             Quaternion.FromToRotation(Vector3.up, parentPosition - currentPosition),
+        //             new Vector3(scale, Vector3.Distance(parentPosition, currentPosition), scale)
+        //             );
+        //         Handles.color = Color.green;
+        //         Handles.DrawWireCube(Vector3.up * 0.5f, Vector3.one);
+        //         
+        //         current = current.parent;
+        //     }
+        // }
     }
 }

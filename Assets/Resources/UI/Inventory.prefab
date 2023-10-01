@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 441.85522, y: 570.99}
-  m_SizeDelta: {x: 782.26, y: 85.983}
+  m_AnchoredPosition: {x: 166.36972, y: 253.93948}
+  m_SizeDelta: {x: 328.9995, y: 35.6208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5219019586605158866
 CanvasRenderer:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 31.85
   m_fontSizeBase: 134
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -215,8 +215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 441.85522, y: 656.97}
-  m_SizeDelta: {x: 782.26, y: 85.983}
+  m_AnchoredPosition: {x: 166.36972, y: 289.55896}
+  m_SizeDelta: {x: 328.9995, y: 35.6208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5970237482878341144
 CanvasRenderer:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 31.85
   m_fontSizeBase: 134
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -349,8 +349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 441.85522, y: 742.95624}
-  m_SizeDelta: {x: 782.26, y: 85.983}
+  m_AnchoredPosition: {x: 166.36972, y: 325.1811}
+  m_SizeDelta: {x: 328.9995, y: 35.6208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3474750695957238451
 CanvasRenderer:
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 31.85
   m_fontSizeBase: 134
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

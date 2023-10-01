@@ -59,7 +59,7 @@ namespace CodeBase.Core.Models
         public void PlaceLamp()
         {
             Components.Lamp.gameObject.SetActive(true);
-            IsLampOn.TurnOff();
+            IsLampOn.TurnOn();
         }
     }
 }
