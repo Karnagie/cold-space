@@ -18,6 +18,6 @@ public class Timer : MonoBehaviour
     {
         _player ??= GameObject.FindWithTag("Player");
         if(_player != null)
-            _text.text = $"Time: {Time.time}";
+            _text.text = $"Time: {(int)Time.time}";
     }
 }
