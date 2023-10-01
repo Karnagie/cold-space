@@ -42,6 +42,7 @@ namespace CodeBase.Infrastructure.Services.Ui
         {
             var window = _container.InstantiatePrefabResourceForComponent<WinWindow>("UI/Win");
             window.Menu.onClick.AddListener((() => GameStateMachine.Enter<MenuState, string>("Menu")));
+            window.Menu.onClick.AddListener((() => GameObject.Destroy(window.gameObject)));
         }
     }
 }

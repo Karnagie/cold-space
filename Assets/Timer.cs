@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     private TMP_Text _text;
     private GameObject _player;
+    private float _time;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class Timer : MonoBehaviour
     {
         _player ??= GameObject.FindWithTag("Player");
         if(_player != null)
-            _text.text = $"Time: {(int)Time.time}";
+            _text.text = $"Time: {(int)_time}";
+        _time += Time.deltaTime;
     }
 }
